@@ -5,7 +5,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
-  smooth: true
+  smooth: true,
+
+  smartphone: {
+    smooth: true
+  },
+
+  tablet: {
+    smooth: true
+  }
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);
@@ -31,7 +39,6 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
-
 var tl = gsap.timeline({
   scrollTrigger:{
     trigger:"#nav",
@@ -60,21 +67,23 @@ tl.to("#nav",{
 })
 
 var start = gsap.timeline();
-start.to("#page1",{
-  backgroundSize:"110%",
-  duartion:10,
-  delay:0.5
+start.from("#page1",{
+  backgroundSize:"150%",
+  duration:1,
+  delay:0.7,
+  ease:"easeIn"
 })
 start.from("#nav",{
     y:-200,
   opacity:0,
-  duartion:5,
+  duration:1,
   ease:"expo.out"
 },"<0.6")
 // start.to("#nav",{
 // opacity:1,
 //   ease:"expo.out"
 // },"<")
+
 
 var reveal = gsap.timeline({
   scrollTrigger:{
@@ -482,5 +491,18 @@ gsap.from(".lst-logo img",{
     
   }
 })
-
-
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 24,
+  // ... aapka purana baki code ...
+  
+  // Yeh do lines zaroor add karo:
+  nested: true, // Swiper ko pata chalega ki wo ek scroller ke andar hai
+  touchStartPreventDefault: false, // Touch conflict rokne ke liye
+  
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1200: { slidesPerView: 4 }
+  }
+});
