@@ -186,6 +186,7 @@ html, body {
     /* background-color: red; */
     min-height: 190vh;
     position: relative;
+    padding-top: 0.5px;
 }
 
 .logo{
@@ -400,21 +401,22 @@ html, body {
     /* Floating Add Button on Bottom Right */
     .add-btn {
       position: absolute;
-      bottom: 12px;
-      right: 12px;
+      bottom: 1vw;
+      right: 1vw;
       background: #fff;
       border: 1px solid #000;
       border-radius: 8px;
-      width: 45px;
-      height: 45px;
+      width: 3.7vw;
+      height: 3.7vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      font-size: 11px;
-      font-weight: bold;
+      font-size: 1vw;
+      font-weight: 300;
       color: #000;
+      font-family: figtree ;
     }
     .add-btn span { font-size: 16px; margin-bottom: -2px; }
 
@@ -423,26 +425,33 @@ html, body {
       margin-top: 15px;
       padding: 0 5px;
     }
+.add-btn:hover{
+    background-color: #2A2857;
+    color: #fff;
+}
 
     .card-details h3 {
-      font-size: 1.6vw;
+      font-size: 1.7vw;
       font-weight: 400;
       color: #1a1a1a;
-      margin: 0 0 8px 0;
+      margin: 0 0 1.2vw 0;
       line-height: 1.2;
+      font-family: reck;
     }
 
-    .card-details .price {
+    .card-details h4 {
       font-size: 1vw;
-      font-weight: bold;
+      font-weight: 300;
       color: #333;
-      margin-bottom: 6px;
+      margin-bottom:0.5vw;
+      font-family: figtree;
     }
 
-    .card-details .desc {
+    .card-details p {
       font-size: 0.9vw;
       color: #555;
       line-height: 1.4;
+      font-family: figtree;
     }
 
     /* --- Custom Navigation Arrow (Perfect Circle over the 4th card) --- */
@@ -1091,7 +1100,7 @@ color: #ffffff;
     justify-content: center;
     position: absolute;
     padding: 0vw 0.5vw 0vw 0.5vw;
-    margin-top: 18vh;
+    top: 16vh;
     font-family: midnight;
     
     left: 50%;
@@ -1354,6 +1363,9 @@ color: #ffffff;
     bottom: 3vw;
     border-radius: 1vw;
     border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #page10{
     width: 100%;
@@ -1736,6 +1748,7 @@ color: #ffffff;
 }
 .b5{
     background-color: #C790DB;
+    
 }
 
 /* ===== PAGE 8 HORIZONTAL SCROLL SECTION ===== */
@@ -1869,4 +1882,132 @@ color: #ffffff;
     color:#000;
       border: 1px solid black;
 
+}
+.crdtag{
+    width: 100%;
+    height: 5vw;
+    /* background-color: red; */
+    position: absolute;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 0.5vw 0vw 0.5vw;
+
+}
+
+.tg1{
+    
+    
+  
+    
+    width: fit-content;
+    height: 3.2vw;
+    background-color: #fbfbfb;
+    border-radius: 0.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: midnight;
+      color: #0c0c0c;
+      border: 1px solid black;
+      padding: 0.5vw;
+
+}
+.tg1 h2{
+    font-size: 1.8vw;
+  
+    font-weight: 400;
+}
+.tg2 h4{
+    font-family: figtree;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+.p9belm{
+    width: 90%;
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.p9-1{
+    width: 100%;
+    height: 15vw;
+    /* background-color: pink; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 2vw;
+}
+.p9-2{
+    width: 100%;
+    height: 12vw;
+    /* background-color: darkolivegreen; */
+     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2vw;
+
+}
+.p9-1 h1{
+    font-family: reck;
+    font-size: 4.1vw;
+    font-weight: 400;
+    color: #fff;
+
+}
+.p9p{
+    width: 78%;
+    font-family: figtree;
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+.p9b{
+    width: 13vw;
+    height: 3.5vw;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: figtree;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    border: 1px solid black;
+}
+.p9b h3{
+    font-weight: 300;
+}
+.p9b:hover{
+    background-color: #2A2857;
+    color: #fff;
+}
+.p7movingelm{
+
+        width: 11vw;
+    height: 11vw;
+    border-radius: 50%;
+    /* background-color: red; */
+    position: absolute;
+    top: 5vw;
+    right: 8vw;
+    background-image: url(./ASSETS/designed_for_ease\ \(1\).svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.arw1:hover{
+    background-color: #2A2857;
+    color: #ffffff;
+}
+.arw2:hover{
+    background-color: #2A2857;
+    color: #ffffff;
 }

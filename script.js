@@ -356,3 +356,131 @@ y: "0%",
 
 
 
+gsap.from(".psix6 h1, .psix6 h5, .psix6 .conbtn",{
+  y:100,
+  opacity:0,
+    stagger:0.2,
+
+  scrollTrigger:{
+    trigger:"#page6",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+
+gsap.from(".p9-1 h1",{
+  y:100,
+  opacity:0,
+    stagger:0.2,
+
+  scrollTrigger:{
+    trigger:"#page9",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+gsap.from(".p9p",{
+  y:100,
+  opacity:0,
+    stagger:0.2,
+
+  scrollTrigger:{
+    trigger:"#page9",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+gsap.from(".p9b",{
+  y:100,
+  opacity:0,
+    stagger:0.2,
+
+  scrollTrigger:{
+    trigger:"#page9",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+gsap.from(".p7txt h1, .p7txt h5",{
+  y:100,
+  opacity:0,
+    stagger:0.2,
+
+  scrollTrigger:{
+    trigger:"#page7",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+gsap.to(".p7movingelm",{
+ top:"-5vw",
+
+  scrollTrigger:{
+    trigger:"#page7",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    scrub:3
+    
+  }
+})
+gsap.from(".p7layertxt h1, .p7layertxt h4",{
+  y:100,
+  opacity:0,
+    stagger:0.2,
+
+  scrollTrigger:{
+    trigger:".p7layertxt",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+gsap.from(".nice",{
+ 
+  opacity:0,
+    
+
+  scrollTrigger:{
+    trigger:".p7layertxt",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+gsap.from(".lst-logo img",{
+ 
+  opacity:0,
+    
+
+  scrollTrigger:{
+    trigger:"#page11",
+    // markers:true,
+    scroller:"#main",
+    start:"top 45%",
+    end:"top 5%",
+    
+  }
+})
+
+
