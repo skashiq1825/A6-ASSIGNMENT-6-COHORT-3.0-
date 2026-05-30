@@ -65,20 +65,44 @@ tl.to("#nav",{
     
 
 })
+if (window.innerWidth >= 320 && window.innerWidth <= 600) {
 
+  var start1 = gsap.timeline();
+
+  start1.from("#page1", {
+    backgroundSize: "400%",
+    duration: 1,
+    delay: 0.7,
+    ease: "easeIn"
+  });
+
+}
+if (window.innerWidth >= 700) {
+
+  var start0 = gsap.timeline();
+
+  start0.from("#page1", {
+    backgroundSize: "150%",
+    duration: 1,
+    delay: 0.7,
+    ease: "easeIn"
+  });
+
+}
 var start = gsap.timeline();
-start.from("#page1",{
-  backgroundSize:"150%",
-  duration:1,
-  delay:0.7,
-  ease:"easeIn"
-})
+// start.from("#page1",{
+//   backgroundSize:"150%",
+//   duration:1,
+//   delay:0.7,
+//   ease:"easeIn"
+// })
 start.from("#nav",{
     y:-200,
   opacity:0,
   duration:1,
-  ease:"expo.out"
-},"<0.6")
+  ease:"expo.out",
+  delay:1.5
+})
 // start.to("#nav",{
 // opacity:1,
 //   ease:"expo.out"
@@ -122,7 +146,7 @@ var reveal2 = gsap.timeline({
 }) 
 reveal2.from(".best-tag",{
   opacity:0,
-  top:"30vh",
+  top:"0vh",
   
 },"<0.4")
 reveal2.from(".best-tag",{
@@ -275,7 +299,9 @@ gsap.to(".maintext",{
     end:"top -10%",
     scrub:10
   }
-})
+}) 
+
+if (window.innerWidth >= 700) {
 gsap.to(".para",{
  top:"120vh",
  scrollTrigger:{
@@ -287,6 +313,26 @@ gsap.to(".para",{
     scrub:10
   }
 })
+
+
+}
+
+if (window.innerWidth >= 320 && window.innerWidth <= 600) {
+
+gsap.to(".para",{
+ top:"75vh",
+ scrollTrigger:{
+    trigger:"#page4",
+    scroller:"#main",
+    // markers:true,
+    start:"top 5%",
+    end:"top -40%",
+    scrub:10
+  }
+})
+
+}
+if (window.innerWidth >= 700) {
 gsap.to(".picon",{
  top:"185vh",
  scrollTrigger:{
@@ -298,6 +344,27 @@ gsap.to(".picon",{
     scrub:10
   }
 })
+
+
+}
+
+if (window.innerWidth >= 320 && window.innerWidth <= 600) {
+
+gsap.to(".picon",{
+ top:"97vh",
+ scrollTrigger:{
+    trigger:".maintext",
+    scroller:"#main",
+    // markers:true,
+    start:"top 40%",
+    end:"top -10%",
+    scrub:10
+  }
+})
+
+}
+
+
 
 
 var revealp5 = gsap.timeline({
