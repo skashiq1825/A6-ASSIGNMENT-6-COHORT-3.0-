@@ -51,6 +51,8 @@ var tl = gsap.timeline({
 }
     
 );
+if (window.innerWidth >= 700) {
+
 tl.to("#nav",{
   top:"0vh",
     width:"102vw",
@@ -65,6 +67,53 @@ tl.to("#nav",{
     
 
 })
+
+}
+if (window.innerWidth >= 320 && window.innerWidth <= 600) {
+
+var tl12 = gsap.timeline({
+  scrollTrigger:{
+    trigger:"#page1",
+    start:"top -10%%",
+    end:"top 20%",
+    markers:true,
+    scroller:"#main",
+    scrub:2,
+    }
+}
+    
+);
+  
+tl12.to("#nav",{
+  top:"0vh",
+    width:"100%",
+   
+    boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.274)",
+    
+
+})
+tl12.to("#nav",{
+
+    borderRadius:"0vw",
+    
+
+})
+
+}
+// tl.to("#nav",{
+//   top:"0vh",
+//     width:"102vw",
+//     left:"-1vw",
+//     boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.274)",
+    
+
+// })
+// tl.to("#nav",{
+
+//     borderRadius:"0vw",
+    
+
+// })
 if (window.innerWidth >= 320 && window.innerWidth <= 600) {
 
   var start1 = gsap.timeline();
