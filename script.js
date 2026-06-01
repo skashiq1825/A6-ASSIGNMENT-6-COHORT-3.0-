@@ -51,6 +51,14 @@ var tl = gsap.timeline({
 }
     
 );
+gsap.from(".p1box",{
+  opacity:0,
+  duration:1.2,
+  delay:1,
+  y:-100,
+  stagger:0.2
+
+})
 if (window.innerWidth >= 769) {
 
 tl.to("#nav",{
