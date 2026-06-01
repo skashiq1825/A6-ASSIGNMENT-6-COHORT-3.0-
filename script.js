@@ -51,7 +51,7 @@ var tl = gsap.timeline({
 }
     
 );
-if (window.innerWidth >= 700) {
+if (window.innerWidth >= 769) {
 
 tl.to("#nav",{
   top:"0vh",
@@ -69,14 +69,14 @@ tl.to("#nav",{
 })
 
 }
-if (window.innerWidth >= 320 && window.innerWidth <= 600) {
+if (window.innerWidth >= 320 && window.innerWidth <= 768) {
 
 var tl12 = gsap.timeline({
   scrollTrigger:{
     trigger:"#page1",
     start:"top -10%%",
     end:"top 20%",
-    markers:true,
+    // markers:true,
     scroller:"#main",
     scrub:2,
     }
@@ -114,7 +114,7 @@ tl12.to("#nav",{
     
 
 // })
-if (window.innerWidth >= 320 && window.innerWidth <= 600) {
+if (window.innerWidth >= 320 && window.innerWidth <= 768) {
 
   var start1 = gsap.timeline();
 
@@ -126,7 +126,7 @@ if (window.innerWidth >= 320 && window.innerWidth <= 600) {
   });
 
 }
-if (window.innerWidth >= 700) {
+if (window.innerWidth >= 769) {
 
   var start0 = gsap.timeline();
 
@@ -264,6 +264,7 @@ swiper.on('slideChange', function () {
   }
 });
 
+if (window.innerWidth >= 769) {
 
 var revealp3 = gsap.timeline({
   scrollTrigger:{
@@ -301,6 +302,50 @@ revealp3.from(".txtbox span",{
   opacity:0,
   stagger:0.1
 },"<0.2")
+
+}
+
+if (window.innerWidth >= 320 && window.innerWidth <= 768) {
+
+  var revealp3m = gsap.timeline({
+  scrollTrigger:{
+    trigger:"#page3",
+    scroller:"#main",
+    // markers:true,
+    start:"top 80%",
+    end:"top 30%",
+    
+
+  }
+})
+revealp3m.from(".dis",{
+  opacity:0,
+  marginTop:"0vh",
+  ease:"power2.Out"
+  
+},"<")
+revealp3m.from(".dis",{
+ rotate:"0deg"
+},"<0.3")
+revealp3m.to(".p3-txt h1 span",{
+y: "0%",
+  opacity:1,
+  stagger:0.1
+},"<0.3")
+revealp3m.to(".p3-txt2 h1 span",{
+y: "0%",
+  opacity:1,
+  stagger:0.1
+},"<0.2")
+
+revealp3m.from(".txtbox span",{
+
+  opacity:0,
+  stagger:0.1
+},"<0.2")
+
+
+}
 
 var revealp4 = gsap.timeline({
   scrollTrigger:{
@@ -366,7 +411,7 @@ gsap.to(".para",{
 
 }
 
-if (window.innerWidth >= 320 && window.innerWidth <= 600) {
+if (window.innerWidth >= 320 && window.innerWidth <= 768) {
 
 gsap.to(".para",{
  top:"75vh",
@@ -381,7 +426,7 @@ gsap.to(".para",{
 })
 
 }
-if (window.innerWidth >= 700) {
+if (window.innerWidth >= 769) {
 gsap.to(".picon",{
  top:"185vh",
  scrollTrigger:{
@@ -397,7 +442,7 @@ gsap.to(".picon",{
 
 }
 
-if (window.innerWidth >= 320 && window.innerWidth <= 600) {
+if (window.innerWidth >= 320 && window.innerWidth <= 768) {
 
 gsap.to(".picon",{
  top:"97vh",
